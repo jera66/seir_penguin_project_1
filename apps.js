@@ -18,7 +18,6 @@ let questions = [];
 const chosenAnswer = (event, question) => {
     console.log(event);
     if(event.target.innerText === question.answer){
-      console.log("Correct")
         if(startingScore.which){
             startingScore.player1++;
             startingScore.which = !startingScore.which;

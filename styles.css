@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(88deg, transparent, rosybrown, gray);
+    background-image: linear-gradient(20deg, transparent, rosybrown, gray);
 }
 h1 {
     text-align: center;
@@ -14,7 +14,7 @@ h1 {
     background-color: rgb(214, 185, 185);
     background-image: linear-gradient(transparent, rosybrown, gray);
     color: rgb(97, 44, 44);
-    font-size: 28px;
+    /* font-size: 28px; */
     margin: 0 auto;
 }
 #answer {
@@ -62,11 +62,11 @@ h1 {
     color: rgb(119, 55, 55);
     text-align: center;
 }
-/* MEDIA QUERIES */
+/* MEDIA QUERIES
 /* for phones, tablets and small ipads */
-@media (min-width:340px)  { 
+ @media only screen and (min-width:320px)  { 
    #question {
-    width: 67%;
+    width: 50%;
     padding: 20px;
     border: 3px solid rosybrown;
     background-color: rgb(214, 185, 185);
@@ -76,8 +76,49 @@ h1 {
     margin: 0 auto;
     }
     #answer {
-    max-width: 100;
+    width: auto;
+    margin: 0 auto;
+    color: rgb(97, 44, 44);
+    background-color: rosybrown;
+    background-image: linear-gradient(transparent, rosybrown, gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    }
+    #answer ul li {
+    width: auto;
+    height: auto;
+    background-color: rgb(226, 221, 221);
+    background-image: linear-gradient(transparent, rosybrown, gray);
+    color: rgb(134, 38, 38);
     margin: 10px auto;
+    font-weight: bolder;
+    }
+     #scores {
+    display: flex;
+    width: 65.90%;
+    background-color: rosybrown;
+    background-image: linear-gradient(transparent, rosybrown, gray);
+    justify-content: center;
+    margin: 0 auto;
+    padding: 25px;
+    }
+ }
+ @media (min-width:280px)  { 
+   #question {
+    width: 67%;
+    padding: 20px;
+    border: 3px solid rosybrown;
+    background-color: rgb(214, 185, 185);
+    background-image: linear-gradient(transparent, rosybrown, gray);
+    color: rgb(97, 44, 44);
+    font-size: 28px;
+    margin: 5px auto;
+    }
+    #answer {
+    width: 61%;
+    margin: 0 auto;
     color: rgb(97, 44, 44);
     background-color: rosybrown;
     background-image: linear-gradient(transparent, rosybrown, gray);
@@ -88,16 +129,15 @@ h1 {
     }
     #answer ul li {
     max-width: 100%;
-    height: 90px;
     background-color: rgb(226, 221, 221);
     background-image: linear-gradient(transparent, rosybrown, gray);
     color: rgb(134, 38, 38);
-    margin: 10px auto;
     font-weight: bolder;
+    padding: 60px;
 }
      #scores {
     display: flex;
-    width: 77.50%;
+    width: 65.90%;
     background-color: rosybrown;
     background-image: linear-gradient(transparent, rosybrown, gray);
     justify-content: center;
@@ -106,7 +146,7 @@ h1 {
     }
  }
  /* for laptops, ipads and desktops */
-@media (max-width:1500px)  { 
+@media (min-width:1000px) { 
    #question {
     width: 70%;
     padding: 30px;
@@ -148,7 +188,7 @@ h1 {
 }
 #scores {
     display: flex;
-    width: 74.70%;
+    width: 71%;
     background-color: rosybrown;
     background-image: linear-gradient(transparent, rosybrown, gray);
     justify-content: center;
@@ -162,4 +202,4 @@ h1 {
     color: rgb(119, 55, 55);
     text-align: center;
 }
- }
+ } 
