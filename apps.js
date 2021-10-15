@@ -13,7 +13,6 @@ const $player1Score = $('#player1 h4');
 const $player2Score = $('#player2 h4');
 console.log($player1Score, $player2Score);
 
-let questions = [];
 
 const chosenAnswer = (event, question) => {
     console.log(event);
@@ -28,7 +27,7 @@ const chosenAnswer = (event, question) => {
         }
         settingTheBoard(questions);
     }else{
-      console.log("incorrect")
+      // console.log("incorrect")
         settingTheBoard(questions);
          startingScore.which = !startingScore.which;
 
